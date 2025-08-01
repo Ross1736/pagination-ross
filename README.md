@@ -30,7 +30,7 @@ function App() {
   <li>📁 Código del demo: <a href="https://github.com/Ross1736/pagination-ross-demo.git" target="_blank">https://github.com/Ross1736/pagination-ross-demo.git</a></li>
 </ul>
 
-![Demo visual](./src/img/img.png)
+![Demo visual](https://raw.githubusercontent.com/Ross1736/pagination-ross/main/src/img/img.png)
 
 ## Props
 
