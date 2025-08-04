@@ -32,22 +32,6 @@ function App() {
 
 ![Demo visual](https://raw.githubusercontent.com/Ross1736/pagination-ross/main/src/img/img.png)
 
-## Props
-
-| Propiedad           | Tipo                   | Requerido | Descripción                                                       |
-| ------------------- | ---------------------- | --------- | ----------------------------------------------------------------- |
-| currentPage         | number                 | Sí        | Página actual que está siendo visualizada.                        |
-| totalPages          | number                 | Sí        | Número total de páginas disponibles.                              |
-| onPageChange        | (page: number) => void | No        | Callback que se ejecuta al cambiar de página.                     |
-| className           | string                 | No        | Clase CSS para el contenedor principal.                           |
-| style               | React.CSSProperties    | No        | Estilos en línea para el contenedor principal.                    |
-| colorIcon           | string                 | No        | Color de los íconos de navegación. Por defecto: "#18181b".        |
-| buttonClassName     | string                 | No        | Clase CSS para los botones de navegación (anterior/siguiente).    |
-| listClassName       | string                 | No        | Clase CSS para el `<ul>` que contiene los botones de página.      |
-| itemClassName       | string                 | No        | Clase CSS para cada ítem de paginación (`<li>`).                  |
-| activeItemClassName | string                 | No        | Clase CSS para el ítem activo (página actual).                    |
-| ellipsisClassName   | string                 | No        | Clase CSS para los ítems que muestran puntos suspensivos ("..."). |
-
 ## Ejemplo de lógica de paginación
 
 Aquí tienes una lógica básica para paginar tu lista de ítems:
@@ -70,6 +54,22 @@ function handleClick(page: number) {
   console.log(String(page));
 }
 ```
+
+## Props
+
+| Propiedad           | Tipo                   | Requerido | Descripción                                                       |
+| ------------------- | ---------------------- | --------- | ----------------------------------------------------------------- |
+| currentPage         | number                 | Sí        | Página actual que está siendo visualizada.                        |
+| totalPages          | number                 | Sí        | Número total de páginas disponibles.                              |
+| onPageChange        | (page: number) => void | No        | Callback que se ejecuta al cambiar de página.                     |
+| className           | string                 | No        | Clase CSS para el contenedor principal.                           |
+| style               | React.CSSProperties    | No        | Estilos en línea para el contenedor principal.                    |
+| colorIcon           | string                 | No        | Color de los íconos de navegación. Por defecto: "#18181b".        |
+| buttonClassName     | string                 | No        | Clase CSS para los botones de navegación (anterior/siguiente).    |
+| listClassName       | string                 | No        | Clase CSS para el `<ul>` que contiene los botones de página.      |
+| itemClassName       | string                 | No        | Clase CSS para cada ítem de paginación (`<li>`).                  |
+| activeItemClassName | string                 | No        | Clase CSS para el ítem activo (página actual).                    |
+| ellipsisClassName   | string                 | No        | Clase CSS para los ítems que muestran puntos suspensivos ("..."). |
 
 Puedes combinar esto con el componente:
 
