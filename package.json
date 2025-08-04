@@ -1,6 +1,6 @@
 {
   "name": "pagination-ross",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Pagination-ross is a lightweight and flexible pagination component designed for React applications. It gives developers full control over styling without enforcing any default look, making it perfect for clean, customizable UIs",
   "homepage": "https://pagination-ross-demo.pages.dev",
   "repository": {
