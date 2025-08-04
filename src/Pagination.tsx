@@ -4,62 +4,62 @@ import { CSSProperties } from "react";
 
 interface PaginationProps {
   /**
-   * Página actual que está siendo visualizada.
+   * Current page being displayed.
    */
-  currentPage: number;
+  readonly currentPage: number;
 
   /**
-   * Número total de páginas disponibles.
+   * Total number of available pages.
    */
-  totalPages: number;
+  readonly totalPages: number;
 
   /**
-   * Callback que se ejecuta al cambiar de página. Recibe la nueva página como argumento.
+   * Callback fired when the page changes. Receives the new page as an argument.
    */
-  onPageChange?: (page: number) => void;
+  readonly onPageChange?: (page: number) => void;
 
   /**
-   * Clase CSS adicional para aplicar al contenedor principal del componente.
+   * Additional CSS class applied to the main container.
    */
-  className?: string;
+  readonly className?: string;
 
   /**
-   * Estilo en línea para aplicar al contenedor principal del componente.
+   * Inline style applied to the main container.
    */
-  style?: CSSProperties;
+  readonly style?: CSSProperties;
 
   /**
-   * Color que se aplica a los íconos de navegación (izquierda y derecha).
-   * Por defecto: "#18181b"
+   * Color applied to navigation icons (left and right).
+   * Default: "#18181b"
    */
-  colorIcon?: string;
+  readonly colorIcon?: string;
 
   /**
-   * Clase CSS para los botones de navegación (anterior y siguiente).
-   * Si no se proporciona, se usa el estilo por defecto del módulo CSS.
+   * CSS class for navigation buttons (previous and next).
+   * If not provided, default module styles are used.
    */
-  buttonClassName?: string;
+  readonly buttonClassName?: string;
 
   /**
-   * Clase CSS para el elemento `<ul>` que contiene los botones de página.
+   * CSS class for the `<ul>` element that contains the page buttons.
    */
-  listClassName?: string;
+  readonly listClassName?: string;
 
   /**
-   * Clase CSS para cada ítem de paginación (elementos `<li>`).
+   * CSS class for each pagination item (`<li>` elements).
    */
-  itemClassName?: string;
+  readonly itemClassName?: string;
 
   /**
-   * Clase CSS para el ítem activo (la página actual).
-   * Si no se proporciona, se usa el estilo por defecto del módulo CSS.
+   * CSS class for the active item (current page).
+   * If not provided, default module styles are used.
    */
-  activeItemClassName?: string;
+  readonly activeItemClassName?: string;
 
   /**
-   * Clase CSS para los ítems que muestran puntos suspensivos ("...").
+   * CSS class for ellipsis items ("...").
    */
-  ellipsisClassName?: string;
+  readonly ellipsisClassName?: string;
 }
 
 function Pagination({
